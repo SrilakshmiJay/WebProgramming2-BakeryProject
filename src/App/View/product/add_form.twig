@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+{% block title %}Add a new order{% endblock %}
+{% block content %}
+<div class = "content">
+<form action="/product/create" method="POST">
+    <label>First Name <input name="firstName" required/></label>
+    <label>Last Name <input name="lastName" required/></label>
+    <label>Phone Number <input name="phoneNumber" required/></label>
+    <label>Order Date <input name="orderDate" required/></label></br></br>
+    <label>Banana Walnut Bread<input name="bananaWalnutBread" /> </label></br></br>
+    <label>Chocolate Cookie <input name="chocolateCookie" /></label></br></br>
+    <label>Rum Raisin Cupcake <input name="rumRaisinCupcake" /></label></br></br>
+    <label>Dark Chocolate Brownie <input name="darkChocolateBrownie" /></label></br></br>
+
+    <button>Place your order</button>
+   
+    <div>
+</form>
+{% endblock %}

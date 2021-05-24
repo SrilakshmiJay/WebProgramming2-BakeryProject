@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %} 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="/assets/js/site.js" defer></script>
+    <title>{% block title %}My Awesome Site{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+ <h1> <img src="../../../../assets/img/Cupcake.jpg"/>Sree's Bakery</h1>
+ 
+<header>
+   
+    <nav>
+        <ul>
+        
+            <li><a href="/">Home</a></li>
+            <li><a href="/product">Bakery Items</a></li>
+            <li><a href="/about">About us</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+    {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

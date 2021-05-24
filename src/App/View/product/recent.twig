@@ -1,0 +1,36 @@
+{% extends "base.twig" %}
+{% block content %}
+<div class = "content">
+<h3>Your recent Orders</h3>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Order Date</th>
+            <th>Banana Walnut bread</th>
+            <th>Chocolate Cookie</th>
+            <th>Rum Raisin Cupcake</th>
+            <th>Dark Chocolate Brownie</th>
+            <th></th>
+        </tr>   
+    </thead>
+    <tdbody>
+    {% for product in products %}
+        <tr>
+            <td>{{product.firstName}}</td>
+            <td>{{product.lastName}}</td>
+            <td>{{product.phoneNumber}}</td>
+            <td>{{product.orderDate}}</td>
+            <td>{{product.bananaWalnutBread}}</td>
+            <td>{{product.chocolateCookie}}</td>
+            <td>{{product.rumRaisinCupcake}}</td>
+            <td>{{product.darkChocolateBrownie}}</td>
+            <td><a href="/product/read?id={{product.id}}">More Info</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

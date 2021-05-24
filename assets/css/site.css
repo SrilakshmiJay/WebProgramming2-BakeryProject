@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sofia&display=swap');
+
+body,html{
+    padding:0;
+   
+    margin:0;
+    font-family: sofia;
+    background-color:rgb(148, 209, 233);
+    color:rgb(155, 52, 86);
+}
+
+header{
+    background-color:#4f6879;
+    color:rgb(155, 52, 86);
+    height: 80px;
+    width:100%;
+    padding-top:0px;
+    padding-bottom: 120px;
+    text-shadow: 2px 2px 5px rgb(155, 52, 86);
+}
+p{
+    font-size: 30px;
+    padding-left:200px;
+}
+
+h1 {
+   
+   font-size: 60px;
+   padding-top: 90px;
+   padding-left: 200px;
+   color:palevioletred; 
+   padding-left:200px; 
+   text-shadow: 2px 2px 5px rgb(155, 52, 86);
+}
+h2,h3{
+    font-size: 40px;
+    padding-top: 90px;
+    padding-left: 150px;
+    color:rgb(155, 52, 86);
+    padding-left:200px;
+
+}
+
+ul li{
+   display:inline;
+   padding: 60px 30px;
+   font-size: 30px;
+   font-weight:bold;
+   color:rgb(155, 52, 86);
+
+}
+ul a{
+    list-style: none;
+    color:#2b2758;
+    font-size: 30px;
+    padding: 60px 30px;
+    background-color: rgb(82, 30, 47);
+    border: none;
+    color: rgb(207, 194, 194);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.content a {
+    background-color: rgb(82, 30, 47);
+    border: none;
+    color: rgb(207, 194, 194);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav ul{
+
+   padding-left: 0;
+   padding-top: 0;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   flex-wrap:wrap;
+}
+.content{
+    padding-left: 100px;
+    padding-top: 100px;
+
+}
+.picture{
+    
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    border:solid 10px rgb(155, 52, 86);
+    padding: 40px;
+}
+
+.picture > div{
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:100%;
+    max-width:400px;
+    padding-left:200px;
+}
+
+
+.picture img{
+    width:100%;
+}
+
+@media screen and ( min-width: 800px){
+    .picture > div{
+        display: flex;
+        flex-wrap:wrap;
+       
+        margin:30px;
+        height:360px;
+    }
+    footer{
+        background-color: palevioletred;
+        text-align: center;
+        padding: 40px;
+
+    }
+
+}
+
+

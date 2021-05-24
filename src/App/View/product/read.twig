@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+{% block content %}
+
+
+<div class = "content">
+<h1>{{product.firstName}} {{product.lastName}}</h1>
+
+<a href="/product">Back to Our Products</a>
+<a href="/product/update?id={{product.id}}">Update</a>
+<a href="/product/delete?id={{product.id}}">Delete</a>
+<div>
+{% endblock %} 

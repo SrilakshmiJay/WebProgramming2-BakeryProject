@@ -1,0 +1,18 @@
+{% extends "base.twig" %}
+{% block title %}Update Order{% endblock %}
+{% block content %}
+<div class = "content">
+<form action="/product/save" method="POST">
+    <input type="hidden" name="id" value="{{product.id}}"/>
+    <label>First Name <input name="firstName" value="{{product.firstName}}" required/></label>
+    <label>Last Name <input name="lastName" value="{{product.lastName}}" required/></label>
+    <label>Phone Number <input name="phoneNumber" value="{{product.phoneNumber}}" required/></label>
+    <label>Order Date <input name="orderDate" value="{{product.orderDate}}" required/></label></br></br>
+    <label>Banana Walnut Bread <input name="bananaWalnutBread" value="{{product.bananaWalnutBread}}" /> </label></br></br>
+    <label>Chocolate Cookie <input name="chocolateCookie"  value="{{product.chocolateCookie}}"/></label></br></br>
+    <label>Rum Raisin Cupcake <input name="rumRaisinCupcake"  value="{{product.rumRaisinCupcake}}"/></label></br></br>
+    <label>Dark Chocolate Brownie <input name="darkChocolateBrownie"  value="{{product.darkChocolateBrownie}}"/></label></br></br>
+    <button>Save update</button>
+</form>
+<div>
+{% endblock %}
